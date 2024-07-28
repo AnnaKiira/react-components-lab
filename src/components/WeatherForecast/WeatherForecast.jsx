@@ -1,6 +1,7 @@
 import './WeatherForecast.css'
 
-const WeatherForecast = ({ day, img, imgAlt, conditions, time }) => {
+const WeatherForecast = ( props ) => {
+    const { day, img, imgAlt, conditions, time} = props;
     return (
         <div className="weather">
             <h2>{day}</h2>
